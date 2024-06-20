@@ -65,4 +65,25 @@ for (let i = 0; i < 15; i++) {
 
 //Write a JavaScript program that computes the average marks of the following students.
 // Then, this average is used to determine the corresponding grade.
+//for each nested array, i = 0, is student name and i = 1 is student marks
+
+let nameScoreArr = [["David", 80], ["Vinoth", 77], ["Divya", 88], ["Isitha", 95], ["Thomas", 68]];
+//let mrk1 = nameScoreArr[0][1];
+//console.log[mrk1];
+
+let avgMark = ((nameScoreArr[0][1] + nameScoreArr[1][1] + nameScoreArr[2][1] + nameScoreArr[3][1] + nameScoreArr[4][1]) / nameScoreArr.length);
+console.log(avgMark); // = 81.6
+
+if (avgMark < 60) {
+    console.log('Grade is F');
+} else if(avgMark < 70) {
+    console.log('Grade is D');
+} else if (avgMark < 80) {
+    console.log('grade is C');
+}else if (avgMark < 90) {
+    console.log('grade is B');
+}else if (avgMark < 100) {
+    console.log('Grade is A');
+}
+
 
