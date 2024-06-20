@@ -86,4 +86,18 @@ if (avgMark < 60) {
     console.log('Grade is A');
 }
 
+//7. Write a JavaScript program that iterates integers from 1 to 100. But for multiples of three print "Fizz" 
+//instead of the number and for multiples of five print "Buzz". 
+//For numbers multiples of both three and five print "FizzBuzz".
+
+for (let i = 0; i < 100; i++) {
+    if (i % 3 === 0){
+    console.log('fizz');
+} if (i % 2 === 0){
+    console.log('buzz');
+} if((i % 3 === 0) && (i % 2 ===0)){
+    console.log('fizzbuzz');
+}
+}
+
 
