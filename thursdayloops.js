@@ -162,3 +162,39 @@ for (let i = 0; i < 5; i++) {
     }
 
 }
+
+//11. Write a JavaScript program to compute the greatest common divisor (GCD) of two positive integers.
+let numx = 4;
+let numy = 8;
+let gcd;
+
+while(numx != numy) {
+    if (numx > numy){
+        numx = numx - numy;
+    }else {
+        numy = numy - numx;
+    }
+}
+gcd = numy;
+console.log(numy);
+
+//12. Write a JavaScript program to sum 3 and 5 multiples under 1000.
+let multpl3 = [];
+let multpl5 = [];
+let sumOfMult3n5 = [];
+for (let i = 0; i < 1000; i++) {
+    if((i % 3 === 0) ){
+    //multpl3.push(i);
+    console.log(i);
+    multpl3.push(i);
+    }
+    if (i % 5 === 0){
+        console.log(i);
+        multpl5.push(i);
+    }
+    sumOfMult3n5 = multpl3[i] + multpl5[i]; //trying to sum the multiples of 3 with corresponding multiples of 5 at every index.
+} 
+console.log(multpl3);
+console.log(multpl5);
+
+console.log(sumOfMult3n5);
