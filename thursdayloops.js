@@ -136,4 +136,29 @@ for (let a = 0; a < 10; a++) {
 }
 
 
+//10. Write a JavaScript program to construct the following pattern, using a nested for loop.
 
+// *  
+// * *  
+// * * *  
+// * * * *  
+// * * * * *  
+
+for (let i = 0; i < 5; i++) {
+    if (i === 0){
+       console.log("*"); 
+    }
+    if (i === 1) {
+        console.log("**");
+    }
+    if (i === 2) {
+        console.log("***");
+    }
+    if (i === 3) {
+        console.log("****");
+    }
+    if (i === 4) {
+        console.log("*****");
+    }
+
+}
