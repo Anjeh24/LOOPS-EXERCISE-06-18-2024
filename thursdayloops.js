@@ -100,4 +100,40 @@ for (let i = 0; i < 100; i++) {
 }
 }
 
+//8. According to Wikipedia a happy number is defined by the following process :
+//"Starting with any positive integer, replace the number by the sum of the squares of its digits, 
+//and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 
+//1. Those numbers for which this process ends in 1 are happy numbers, while those that do not end in 1 are unhappy numbers 
+//(or sad numbers)".
+//Write a JavaScript program to find and print the first 5 happy numbers.
+
+// let happyNum = 0;  //trying to figure out a solution / how to write a program for this
+// if ()
+
+
+
+
+//9. Write a JavaScript program to find the Armstrong numbers of 3 digits.
+//Note : An Armstrong number of three digits is an integer such that the sum of the cubes of its digits is equal to the number itself. 
+//For example, 371 is an Armstrong number since 3**3 + 7**3 + 1**3 = 371. 
+let a = 0;
+let b = 0;
+let c = 0;  
+let armNum = 0; 
+let cubeNum = a**3 + b**3 + c**3;
+
+for (let a = 0; a < 10; a++) {
+    for (let b = 0; b < 10; b++) {
+        for (let c = 0; c < 10; c++) {
+            let prod = (a * 100 + b * 10 + c);     //trying to reason and figure out a solution to get the armstrong numbers
+            if(prod === cubeNum) {
+                console.log(prod);
+
+            }
+        }
+    }
+
+}
+
+
 
